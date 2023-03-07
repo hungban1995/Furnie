@@ -1,0 +1,21 @@
+export const BASE_URL = "http://localhost:8080";
+export const REGISTER_URL = "api/v1/user/register";
+export const LOGIN_URL = "api/v1/user/login";
+export const REFRESH_TOKEN_URL = "api/v1/user/refresh-token";
+export const UPDATE_USER_URL = "api/v1/user/update";
+export const USER_LOGOUT_URL = "api/v1/user/logout";
+export const GET_PRODUCTS_URL = "api/v1/product";
+export const GET_PRODUCTS_CATEGORIES_URL = "api/v1/product-category";
+export const GET_POST_URL = "api/v1/post";
+export const CREATE_ORDER_URL = "api/v1/order/create";
+export const GET_POST_CATEGORIES_URL = "api/v1/post-category";
+export const CREATE_PRODUCT_REVIEW_URL = "api/v1/product-review/create";
+export const GET_PRODUCT_REVIEW_BY_PRODUCT_URL =
+  "api/v1/product-review/by-product";
+export const GET_PRODUCT_CATEGORY = "api/v1/product-category";
+export const GET_PRODUCT_BY_CATEGORY = "api/v1/product/category";
+export const UPDATE_PRODUCT_REVIEW = "api/v1/product-review/update";
+export const DELETE_PRODUCT_REVIEW = "api/v1/product-review/delete";
+export const GET_ORDERS_BY_USER = "api/v1/order/user";
+export const GET_ORDER_ID = "api/v1/order";
+export const UPDATE_ORDER_URL = "api/v1/order/update";

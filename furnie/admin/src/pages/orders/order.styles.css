@@ -1,0 +1,61 @@
+.order-manager-action-icon {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    cursor: pointer;
+}
+.order-manager__pagination {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.order-manager__pagination ul {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    justify-content: center;
+}
+.order-manager__pagination ul li {
+    margin-right: 10px;
+    padding: 7px 5px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    font-weight: 500;
+    flex: 1;
+}
+.order-manager__pagination ul li.active {
+    border: 1px solid red
+}
+.order-manager__pagination ul li:last-child {
+    margin-right: 0;
+}
+.order-manager__pagination button {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 5px;
+}
+.order-manager__sort-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    padding: 0px 3px;
+}
+.order-manager__sort-form select {
+ border: 1px solid rgba(0, 0, 0, 0.3);
+ padding: 5px;
+ cursor: pointer;
+ outline: 0;
+}
+.order-manager__sort-container button{
+    padding: 3px; 
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    outline: 0;
+    background-color: #fff;
+}

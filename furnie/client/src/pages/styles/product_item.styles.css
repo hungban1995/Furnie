@@ -1,0 +1,71 @@
+.product-item.card {
+  border: 0;
+  border-radius: 0;
+}
+.product-item a {
+  text-decoration: none;
+  color: unset;
+}
+.product-item .card-header {
+  padding: 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  border-radius: 0;
+}
+.product-item .card-header .card-img,
+.product-item .card-header .card-img-top {
+  border-radius: 0;
+  transition: all 0.25s ease;
+}
+.product-item .product-item-image {
+  display: block;
+}
+.product-item .product-item-image:hover .card-img-top {
+  transform: scale(110%);
+}
+.product-item .card-header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -100%;
+  left: 50%;
+  padding: 5px;
+  transform: translateX(-50%);
+  width: 100%;
+  margin-bottom: 0;
+  transition: all 0.25s;
+}
+.product-item .card-header:hover ul {
+  bottom: 0;
+}
+.product-item .card-header ul li a {
+  padding: 5px;
+  color: #000;
+  display: block;
+}
+.product-item .card-header ul li a .icon {
+  width: 25px;
+  height: 25px;
+}
+.product-item .card-header ul li a:hover {
+  background-color: hsla(0, 0%, 0%, 0.6);
+  color: #fff;
+}
+.product-item .card-body {
+  padding: 0;
+}
+.product-item .card-body a h2 {
+  font-size: 16px;
+  font-weight: 400;
+  color: hsla(0, 0%, 17%, 0.7);
+  transition: color 0.25s;
+}
+.product-item .card-body a h2:hover {
+  color: hsla(0, 0%, 0%, 1);
+}
+.product-item .card-body .price--on-sale {
+  margin-right: 10px;
+  text-decoration: line-through;
+}

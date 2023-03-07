@@ -1,0 +1,12 @@
+@media screen and (max-width: 992px) {
+  .blogs-page {
+    flex-direction: column-reverse;
+  }
+}
+
+.post-page__item-image {
+  display: block;
+  overflow: hidden;
+  max-height: 300px;
+  width: 100%;
+}

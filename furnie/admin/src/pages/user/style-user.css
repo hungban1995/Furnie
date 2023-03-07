@@ -1,0 +1,5 @@
+.table-fixed-header thead th {
+    position: sticky;
+    top: 0;
+    background-color: #f5f5f5;
+}

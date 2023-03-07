@@ -1,0 +1,9 @@
+@import "./reset.css";
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "./components/Header.css";
+@import "./components/Navbar.css";
+@import "./components/Layout.css";
+@import "./pages/user/manager/user.style.css";
+@import './components/alert/notify/toast.style.css';
+@import './pages/home.style.css';
+@import "./components/Loading.css";

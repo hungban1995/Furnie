@@ -1,0 +1,31 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/font": "13.1.2",
+    "axios": "^1.2.2",
+    "bootstrap": "^5.2.3",
+    "eslint": "8.32.0",
+    "eslint-config-next": "13.1.2",
+    "formik": "^2.2.9",
+    "moment": "^2.29.4",
+    "next": "^13.1.2",
+    "react": "18.2.0",
+    "react-bootstrap": "^2.7.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.7.1",
+    "react-redux": "^8.0.5",
+    "react-slick": "^0.29.0",
+    "react-stars": "^2.2.5",
+    "redux": "^4.2.0",
+    "slick-carousel": "^1.8.1",
+    "yup": "^0.32.11"
+  }
+}

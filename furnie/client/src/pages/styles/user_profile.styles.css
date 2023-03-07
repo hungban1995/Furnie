@@ -1,0 +1,77 @@
+.user-profile__form .form__avatar-container {
+  display: flex;
+  justify-content: center;
+}
+.user-profile__form .form__avatar-container .form__avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+}
+.user-profile__form .form__avatar-container .form__avatar span {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  border-radius: 50%;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.user-profile__form .form__avatar-container .form__avatar span img {
+  width: 100%;
+  object-fit: cover;
+}
+.user-profile__form .form__avatar-container .form__avatar .form__avatar-upload {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  display: block;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  transition: all 0.25s ease-in;
+}
+.user-profile__form .form__avatar-container .form__avatar span::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.349);
+  z-index: 9;
+  transition: all 0.25s ease-in;
+}
+
+.user-profile__form .form__avatar-container .form__avatar span:hover::after {
+  top: 0;
+}
+.user-profile__form
+  .form__avatar-container
+  .form__avatar
+  span:hover
+  .form__avatar-upload {
+  top: 50%;
+}
+.user-profile__orders .order__action {
+  font-size: 20px;
+  cursor: pointer;
+}
+.user-profile__orders .order--edit {
+  margin-right: 15px;
+}
+.user-profile__orders .order__action.disabled {
+  opacity: 0.2;
+  cursor: unset;
+}
+@media screen and (max-width: 600px) {
+  .user-profile__orders .order__action {
+    font-size: 16px;
+  }
+  .user-profile__orders .order--edit {
+    margin-right: 7px;
+  }
+}

@@ -1,0 +1,61 @@
+.user-manager-form label, .user-manager-form input {
+    display: block;
+}
+
+.user-avatar {
+    position: relative;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.user-avatar-img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.user-avatar-input {
+    position: absolute;
+    top: 0px;
+    cursor: pointer;
+    height: 100vh;
+    background-color: red;
+    opacity: 0;
+    z-index: 2;
+}
+
+/* .user-icon {
+    position: absolute;
+    display: block;
+    top: -50%;
+    z-index: 1;
+    left: 50%;
+    font-size: 50px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: all 0.25s ease;
+} */
+
+.upload-icon-bg {
+    position: absolute;
+    display: block;
+    top: -100%;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    font-size: 50px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.223);
+}
+
+.user-avatar:hover .upload-icon-bg {
+    top: 0;
+    bottom: 0
+}

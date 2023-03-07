@@ -1,0 +1,113 @@
+.shopping-cart {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  max-width: 430px;
+  width: 0;
+  background-color: #fff;
+  z-index: 99999;
+  transition: all 0.25s ease;
+}
+.shopping-cart .shopping-cart__item {
+  position: relative;
+}
+.shopping-cart .shopping-cart__item-list {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  bottom: 200px;
+  right: 0;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.shopping-cart--active {
+  width: 100%;
+}
+.shopping-cart .shopping-cart__header {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #a5a5a559;
+}
+.shopping-cart .shopping-cart__header h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.shopping-cart .shopping-cart__header .close-icon {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  cursor: pointer;
+}
+.shopping-cart .shopping-cart__item.row {
+  width: 100%;
+  margin: unset;
+  align-items: center;
+  padding: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.shopping-cart .shopping-cart__item-image-container {
+  padding: 0;
+}
+.shopping-cart .shopping-cart__item-details-container {
+  align-items: center;
+}
+.shopping-cart .shopping-cart__item-details-left {
+  font-size: 14px;
+}
+.shopping-cart .quantity-count {
+  display: block;
+  text-align: center;
+}
+.shopping-cart .shopping-cart__item-details-left p {
+  margin-bottom: 5px;
+}
+.shopping-cart .shopping-cart__item-quantity-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.shopping-cart .decrease-btn,
+.shopping-cart .increase-btn {
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  display: block;
+  cursor: pointer;
+}
+.shopping-cart .shopping-cart__bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 5px;
+}
+.shopping-cart .shopping-cart__bottom span {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.shopping-cart .shopping-cart__bottom .btn {
+  border-radius: 0;
+}
+.shopping-cart__item .delete-item-icon {
+  width: 30px;
+  height: 30px;
+  color: #000;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  padding: 5px;
+  display: block;
+}

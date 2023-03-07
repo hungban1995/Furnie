@@ -1,0 +1,95 @@
+.oder-details {
+  max-width: 480px;
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px 15px;
+  overflow: auto;
+  height: 70vh;
+  z-index: 999;
+}
+.order-details__background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(0, 0, 0, 0.3);
+  display: none;
+}
+.order-details__background--active {
+  display: block;
+}
+.oder-details .btn {
+  border-radius: 0;
+}
+.oder-details__content {
+  position: absolute;
+  width: 95%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.order-details__infor-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.order-details__infor-item label {
+  flex: 1;
+}
+.order-details__infor-item input {
+  flex: 2;
+  outline: 0;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.order-details__status {
+  display: flex;
+  align-items: center;
+}
+.order-details__status label {
+  flex: 1;
+}
+.order-details__status select {
+  flex: 2;
+  outline: 0;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.order-details__product-quantity {
+  width: 60px;
+  outline: 0;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.table-bordered > :not(caption) > * > * {
+  border-width: 1px;
+}
+.order-details__product-table img {
+  width: 75px;
+}
+.order-details__product-table td {
+  padding: 5px;
+}
+.order-details__product-table .remove-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+.oder-details__header {
+  position: relative;
+}
+.oder-details__header .header__title {
+  text-transform: uppercase;
+}
+.oder-details__header .header__icon {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  z-index: 999;
+}

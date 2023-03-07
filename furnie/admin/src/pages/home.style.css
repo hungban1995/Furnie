@@ -1,0 +1,13 @@
+.dashboard-link {
+    text-decoration: none;
+    color: black;
+}
+
+.dashboard-item-total {
+    margin: 20px 0;
+}
+
+.card-body {
+    padding: 0;
+
+}

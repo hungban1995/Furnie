@@ -1,0 +1,205 @@
+/* Navbar menu style */
+.navbar-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+  }
+}
+.navbar-menu ul {
+  padding-left: unset;
+  margin-bottom: unset;
+  display: flex;
+  align-items: center;
+}
+
+/* Navbar menu left style */
+.navbar-menu .navbar-menu__left {
+  width: calc(100% / 3);
+}
+.navbar-menu .navbar-menu__left ul li {
+  margin-right: 10px;
+}
+.navbar-menu .navbar-menu__left ul li:last-child {
+  margin-right: 0;
+}
+.navbar-menu ul li a {
+  text-decoration: none;
+  color: unset;
+  position: relative;
+  padding: 10px;
+}
+@media screen and (max-width: 1024px) {
+  .navbar-menu ul li a {
+    padding: 3px;
+  }
+}
+.navbar-menu .navbar-menu__left ul li:first-child a {
+  padding-left: 0;
+}
+.navbar-menu .navbar-menu__left ul li:last-child a {
+  padding-right: 0;
+}
+.navbar-menu .navbar-menu__left ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  left: 0;
+  height: 2px;
+  bottom: 0;
+  background-color: black;
+  transition: all 0.25s ease-in;
+}
+.navbar-menu .navbar-menu__left ul li:hover a::after {
+  width: 100%;
+}
+
+/* Navbar menu middle style */
+.navbar-menu .navbar-menu__middle .logo {
+  text-decoration: none;
+  color: unset;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* Navbar menu right style */
+.navbar-menu .navbar-menu__right {
+  width: calc(100% / 3);
+}
+.navbar-menu .navbar-menu__right ul {
+  justify-content: flex-end;
+}
+.navbar-menu .navbar-menu__right ul li {
+  margin-left: 10px;
+}
+.navbar-menu .navbar-menu__right ul li:first-child {
+  margin-left: 0;
+}
+.navbar-menu .navbar-menu__right ul li a {
+  font-size: 24px;
+}
+.navbar-menu .navbar-menu__right ul li:last-child a {
+  padding-right: 0;
+}
+.navbar-menu .navbar-menu__right ul li:first-child a {
+  padding-left: 0;
+}
+.navbar-menu .navbar-menu__right ul li:hover {
+  transform: translateY(-3px);
+}
+.navbar-menu .navbar-menu__right .shopping-cart-icon {
+  cursor: pointer;
+  position: relative;
+}
+.navbar-menu .navbar-menu__right .shopping-cart-icon .cart-quantity {
+  position: absolute;
+  top: 10%;
+  right: -30%;
+  font-size: 12px;
+  background-color: rgba(216, 52, 2, 0.5);
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  padding: 1px 3px; 
+}
+
+/* Navbar menu mobile style */
+.navbar-menu-mobile__container {
+  display: none;
+}
+.navbar-menu-mobile__icon {
+  width: 30px;
+  height: 30px;
+  padding: 5px 5px 5px 0;
+  cursor: pointer;
+}
+.navbar-menu-mobile__cart {
+  width: 30px;
+  height: 30px;
+  padding: 5px 0px 5px 5px;
+  cursor: pointer;
+}
+.navbar-menu-mobile__logo {
+  padding: 5px 5px 5px 5px;
+  font-size: 24px;
+  text-decoration: none;
+  color: unset;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .navbar-menu-mobile__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.navbar-menu-mobile {
+  max-width: 480px;
+  width: 100%;
+  position: fixed;
+  flex-direction: column;
+  z-index: 99;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  background-color: #fff;
+  align-items: start;
+  transition: all 0.25s ease-in;
+}
+.navbar-menu-mobile--active {
+  left: 0;
+}
+.navbar-menu-mobile .navbar-collapse {
+  flex-basis: unset;
+  flex-grow: unset;
+  align-items: unset;
+}
+.navbar-menu-mobile .navbar-nav {
+  flex-direction: column;
+}
+.navbar-menu-mobile .navbar-menu-mobile__header {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #a5a5a559;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-menu-mobile .navbar-menu-mobile__logo {
+  font-size: 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: unset;
+  font-weight: 700;
+  padding: 5px;
+  display: block;
+}
+.navbar-menu-mobile__close-icon {
+  display: block;
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+}
+.navbar-menu-mobile__cart-container {
+  display: block;
+  text-decoration: none;
+  color: unset;
+  position: relative;
+}
+.navbar-menu-mobile__cart-quantity {
+position: absolute;
+  top: -35%;
+  right: -25%;
+  font-size: 12px;
+  background-color: rgba(216, 52, 2, 0.5);
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  padding: 1px 3px;
+}
